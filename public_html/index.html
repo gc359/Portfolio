@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top navigation bar for TryHackMe script -->
+    <div class="top-navbar">
+        <div class="hamburger-icon" onclick="toggleLeftNavbar()">
+            <!-- You can add some content here, like three horizontal lines (typical for hamburger icons) -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <script src="https://tryhackme.com/badge/1144092"></script>
+    </div>
+
+    <!-- Container for the left navigation bar -->
+    <div class="left-navbar-container">
+        <header>
+            <nav class="left-navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cert">Certifications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#badges">Badges</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                        
+                        <li><a href="#tryhackme">-TryHackMe</a></li>
+                        <li><a href="#htb">-HTB Academy</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+    </section>
+    
+    <section id="cert" class="section">
+      <h2>Certifications</h2>
+      <li><a href="#comptia">-CompTIA</a></li>
+      <li><a href="#isc2">-ISC2</a></li>
+      <li><a href="#amazon">-Amazon</a></li>
+      <li><a href="#microsoft">-Microsoft</a></li>
+    </section>
+    
+    <section id="comptia" class="section">
+    <h2>CompTIA</h2>
+          <div class="badge-container">
+              <!-- Badge 1: Security+ -->
+              <div class="badge earned-badge" data-badge="Security+">
+                  <a href="https://www.credly.com/badges/bcfbba80-8348-4fc9-92f8-05f762332d7e" target="_blank">
+                    <img src="https://images.credly.com/size/680x680/images/74790a75-8451-400a-8536-92d792c5184a/CompTIA_Security_2Bce.png" alt="Security+">
+                  </a>
+
+                  <div class="badge-details">
+                      <h3>Security+</h3>
+                  </div>
+              </div>
+      
+          </div>
+    </section>
+    
+    <section id="isc2" class="section">
+    <h2>ISC2</h2>
+          <div class="badge-container">
+              <!-- Badge 1: ISC2 Candidate -->
+              <div class="badge earned-badge" data-badge="ISC2 Candidate">
+                  <a href="https://www.credly.com/badges/8b0eaeed-e3fb-4d85-91a8-9740a8602389" target="_blank">
+                    <img src="https://images.credly.com/size/680x680/images/9180921d-4a13-429e-9357-6f9706a554f0/image.png" alt="ISC2 Candidate">
+                  </a>
+
+                  <div class="badge-details">
+                      <h3>ISC2 Candidate</h3>
+                  </div>
+              </div>
+      
+          </div>
+    </section>
+    
+    <section id="amazon" class="section">
+    <h2>Amazon</h2>
+          <div class="badge-container">
+              <!-- Badge 1: AWS CCP -->
+              <div class="badge earned-badge" data-badge="AWS CCP">
+                  <a href="https://www.credly.com/badges/47cda59b-56fa-4010-9316-fc68a50a4599" target="_blank">
+                    <img src="https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS CCP">
+                  </a>
+
+                  <div class="badge-details">
+                      <h3>AWS CCP</h3>
+                  </div>
+              </div>
+      
+          </div>
+    </section>
+    
+    <section id="microsoft" class="section">
+    <h2>Microsoft</h2>
+          <div class="badge-container">
+              <!-- Badge 1: AZ 900 -->
+              <div class="badge earned-badge" data-badge="AWS CCP">
+                  <a href="https://learn.microsoft.com/en-us/users/gcato-0804/credentials/b76c4776245ff203" target="_blank">
+                    <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg?branch=main" alt="AZ 900">
+                  </a>
+
+                  <div class="badge-details">
+                      <h3>AZ 900</h3>
+                  </div>
+              </div>
+      
+      
+              <!-- Badge 1: SC 900 -->
+              <div class="badge earned-badge" data-badge="SC 900">
+                  <a href="https://learn.microsoft.com/en-us/users/gcato-0804/credentials/de590c7a26c1b17" target="_blank">
+                    <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg?branch=main" alt="SC 900">
+                  </a>
+
+                  <div class="badge-details">
+                      <h3>SC 900</h3>
+                  </div>
+              </div>
+          </div>
+    </section>
+
+    <section id="tryhackme" class="section"> <!-- Changed id to "tryhackme" for consistency -->
+    <h2>TryHackMe</h2>
+    <div class="badge-container">
+        <!-- Badge 1: Intro to Security Engineering -->
+        <div class="badge earned-badge" data-badge="Intro to Security Engineering">
+            <img src="https://tryhackme.com/img/badges/introtosecurityengineering.svg" alt="Intro to Security Engineering Badge">
+            <div class="badge-details">
+                <h3>Intro to Security Engineering</h3>
+                <p>Completed the Security Engineering Intro Room</p>
+            </div>
+        </div>
+
+        <!-- Badge 2: Networking Nerd -->
+        <div class="badge earned-badge" data-badge="Networking Nerd">
+            <img src="https://tryhackme.com/img/badges/networkfundamentals.svg" alt="Networking Nerd Badge">
+            <div class="badge-details">
+                <h3>Networking Nerd</h3>
+                <p>Completed the Networking Fundamentals module</p>
+            </div>
+        </div>
+
+        <!-- Badge 3: Webbed -->
+        <div class="badge earned-badge" data-badge="Webbed">
+            <img src="https://tryhackme.com/img/badges/webbed.svg" alt="Webbed Badge">
+            <div class="badge-details">
+                <h3>Webbed</h3>
+                <p>Understand how the world wide web works</p>
+            </div>
+        </div>
+
+        <!-- Badge 4: World Wide Web -->
+        <div class="badge earned-badge" data-badge="World Wide Web">
+            <img src="https://tryhackme.com/img/badges/howthewebworks.svg" alt="World Wide Web Badge">
+            <div class="badge-details">
+                <h3>World Wide Web</h3>
+                <p>Completed the "How the Web Works" module</p>
+            </div>
+        </div>
+
+        <!-- Badge 5: cat linux.txt -->
+        <div class="badge earned-badge" data-badge="cat linux.txt">
+            <img src="https://tryhackme.com/img/badges/linux.svg" alt="cat linux.txt Badge">
+            <div class="badge-details">
+                <h3>cat linux.txt</h3>
+                <p>Being competent in Linux</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- Additional content below badges -->
+    <div class="additional-content">
+        <h3>Additional Information[TEST]</h3>
+        <p>This is some additional information about the badges or any other content you want to display.</p>
+    </div>
+    </section>
+    
+    <section id="htb" class="section">
+        <h2>HTB Academy</h2>
+        <div class="badge-container">
+            <!-- Badge 1: Academician -->
+            <div class="badge earned-badge" data-badge="Academician">
+                <img src="https://academy.hackthebox.com/storage/badges/academician.png" alt="Academician">
+                <div class="badge-details">
+                    <h3>Academician</h3>
+                    <p>Introduction to Academy module completed</p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <h2>Contact Information</h2>
+        <div class="contact-container">
+            <p>Email: gc359@njit.edu</p>
+            <div class="centered-content">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="gc359" data-version="v1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container for badge pop-ups -->
+    <div id="badge-pop-ups"></div>
+
+    <!-- Include JavaScript at the end -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include JavaScript for toggling left navigation bar -->
+    <script src="script.js"></script>
+</body>
+</html>
