@@ -1,0 +1,265 @@
+/* Reset default browser styles */
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Top navigation bar for TryHackMe script */
+.top-navbar {
+    background-color: #222;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+}
+
+.top-navbar script {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* Container for the left navigation bar */
+.left-navbar-container {
+    position: absolute; /* Change to absolute */
+    top: 0;
+    left: -1200px; /* Initially hidden off the screen */
+    width: 120px;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 998;
+}
+
+
+/* Modify styles for the expanded left navigation bar */
+.left-navbar-container.expanded {
+    left: 0;
+}
+
+/* Hide content within the container by default */
+.left-navbar-container:not(.expanded) .left-navbar {
+    display: none;
+}
+
+/* Left navigation bar for "About," "Contact," and "Badges" buttons */
+header {
+    background-color: #222;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: -120px; /* Initially hidden */
+    height: 100%;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 998;
+    transition: 0.5s;
+}
+
+/* Left navigation bar for "About," "Contact," and "Badges" buttons */
+.left-navbar ul {
+    text-align: left; /* Change to left alignment */
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Change to left alignment */
+}
+
+
+.left-navbar ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the content section to make space for the left navigation bar */
+.section {
+    padding: 3px; /* You can adjust the padding as needed */
+    margin-top: 3px; /* Adjust the margin-top value to your preference */
+    margin-bottom: 3px; /* Adjust the margin-bottom value to your preference */
+    margin-left: 0;
+}
+
+
+/* Profile section */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Badge section */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center; /* Add this line to center-align badge content */
+}
+
+.earned-badge {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 0 0 20px 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.earned-badge img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.earned-badge h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.earned-badge p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Center the "About," "Contact," and "Badges" buttons */
+.about-button,
+.contact-button,
+.badges-button {
+    width: 100px;
+    height: 100px;
+    /* Update text alignment to left */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    justify-content: center;
+    cursor: pointer;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Add styles for the hamburger icon */
+.hamburger-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 999;
+    background-color: #222;
+    padding: 5px;
+    border-radius: 5px;
+    display: block; /* Ensure it's visible */
+}
+
+.hamburger-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Ensure the "About" section is not covered by the top navigation bar */
+#about {
+    margin-top: 80px; /* Adjust the margin-top to avoid overlap */
+}
+
+/* Add styles for the collapsed left navigation bar */
+.left-navbar-container.expanded header {
+    left: 0;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    /* Adjust the size of the badge images for CompTIA, Microsoft, ISC2, and Amazon sections */
+    #comptia img,
+    #microsoft img,
+    #isc2 img,
+    #amazon img,
+    /* Increase the size of the badge images for TryHackMe and HTB Academy sections */
+    #tryhackme img,
+    #htb img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Adjust other styles for smaller screens as needed */
+    .about-button,
+    .contact-button,
+    .badges-button {
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust hamburger icon for smaller screens */
+    .hamburger-icon {
+        top: 10px;
+    }
+    
+    /* Adjust the size of the badge images for mobile */
+    .earned-badge {
+        width: 150px; /* Adjust the width as needed */
+        height: 180px; /* Adjust the height as needed */
+    }
+
+    /* Adjust the size of the badge images for mobile */
+    .earned-badge img {
+        width: 100px; /* Adjust the width as needed */
+        height: 100px; /* Adjust the height as needed */
+    }
+
+    /* Adjust the font size for the heading */
+    .earned-badge h3 {
+        font-size: 18px; /* Adjust the font size as needed */
+    }
+}
