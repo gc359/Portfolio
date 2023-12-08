@@ -57,7 +57,6 @@ a:hover {
     z-index: 998;
 }
 
-
 /* Modify styles for the expanded left navigation bar */
 .left-navbar-container.expanded {
     left: 0;
@@ -94,7 +93,6 @@ header {
     align-items: left; /* Change to left alignment */
 }
 
-
 .left-navbar ul li {
     margin-bottom: 20px;
     display: flex;
@@ -107,8 +105,8 @@ header {
     margin-top: 3px; /* Adjust the margin-top value to your preference */
     margin-bottom: 3px; /* Adjust the margin-bottom value to your preference */
     margin-left: 0;
+    text-align: left; /* Add this rule to left-align the section elements */
 }
-
 
 /* Profile section */
 .profile {
@@ -132,6 +130,11 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center; /* Add this line to center-align badge content */
+}
+
+/* Specifically target earned badges within sections and set text-align to left */
+.section .earned-badge {
+    text-align: left;
 }
 
 .earned-badge {
@@ -166,7 +169,6 @@ header {
     margin: 0;
 }
 
-
 /* Center the "About," "Contact," and "Badges" buttons */
 .about-button,
 .contact-button,
@@ -184,7 +186,6 @@ header {
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
 
 /* Add styles for the hamburger icon */
 .hamburger-icon {
